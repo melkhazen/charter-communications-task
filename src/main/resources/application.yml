@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://database.cvjvutrgbgrj.us-east-1.rds.amazonaws.com:3306/charter
+    username: charter_task
+    password: Charter1!Charter
+    driverClassName: com.mysql.cj.jdbc.Driver
+    properties:
+      useSSL: false
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
