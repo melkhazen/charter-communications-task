@@ -3,7 +3,6 @@ package com.portfolio.melkhazen.chartercommunications.service;
 import com.portfolio.melkhazen.chartercommunications.entity.Customer;
 import com.portfolio.melkhazen.chartercommunications.model.Constants;
 import com.portfolio.melkhazen.chartercommunications.repo.CustomerRepo;
-import org.apache.tomcat.util.bcel.Const;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,6 @@ package com.portfolio.melkhazen.chartercommunications.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
 @AllArgsConstructor

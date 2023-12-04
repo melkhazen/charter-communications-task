@@ -2,7 +2,6 @@ package com.portfolio.melkhazen.chartercommunications.controller;
 
 import com.google.gson.Gson;
 import com.portfolio.melkhazen.chartercommunications.entity.Customer;
-import com.portfolio.melkhazen.chartercommunications.model.Rewards;
 import com.portfolio.melkhazen.chartercommunications.repo.CustomerRepo;
 import com.portfolio.melkhazen.chartercommunications.service.RewardsService;
 import org.springframework.beans.factory.annotation.Autowired;
