@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "0d94a603-3c32-48da-ac30-3f00f36cc0cb",
+		"name": "Charter Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17604480"
+	},
+	"item": [
+		{
+			"name": "New Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\" : \"jack\",\r\n    \"transactionAmount\" : \"120\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customers/newTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"newTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer Points",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
