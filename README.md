@@ -24,7 +24,7 @@ Body: {
 
 ++++++++++++++++++++++++++++++++++++++
 
-TO get a custemors rewards points:
+To get a custemors rewards points:
 GET: localhost:8080/customers/{id}
 
 ++++++++++++++++++++++++++++++++++++++
