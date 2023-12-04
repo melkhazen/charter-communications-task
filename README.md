@@ -11,7 +11,7 @@ Given a record of every transaction during a three month period, calculate the r
 ·       Make up a data set to best demonstrate your solution
 ·       Check solution into GitHub
 
-===============================================================================
+======================================================================
 
 the database is hosted on an AWS RDS instent, just download the solution and start it nop need to add a DB.
 
@@ -21,11 +21,14 @@ Body: {
     "customerName" : "jack",
     "transactionAmount" : "120"
 }
+
 ++++++++++++++++++++++++++++++++++++++
+
 TO get a custemors rewards points:
 GET: localhost:8080/customers/{id}
+
 ++++++++++++++++++++++++++++++++++++++
 
 attached is a Postman file you can just import it: 'Charter Task.postman_collection.json'
 
-================================================================================
+========================================================================
