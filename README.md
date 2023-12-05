@@ -13,9 +13,9 @@ Given a record of every transaction during a three month period, calculate the r
 
 ======================================================================
 
-the database is hosted on an AWS RDS instent, just download the solution and start it nop need to add a DB.
+the database is hosted on an AWS RDS instent, just download the solution and start it no need to add a DB.
 
-To get add a customer transaction:
+To add a customer transaction:
 POST: localhost:8080/customers/newTransaction
 Body: {
     "customerName" : "jack",
