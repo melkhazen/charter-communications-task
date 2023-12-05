@@ -34,10 +34,12 @@ public class RewardsService{
 
         Customer customer = customerRepo.findByCustomerId(customerId);
 
-        if (customer.getTransactionAmount() < Constants.SECOND_REWARD && customer.getTransactionAmount() < 0){
+        if (customer.getTransactionAmount() < Constants.SECOND_REWARD && customer.getTransactionAmount() > Constants.FIRST_REWARD){
             rewardsPoints = customer.getTransactionAmount() - Constants.FIRST_REWARD;
         } else if (customer.getTransactionAmount() > Constants.SECOND_REWARD) {
             rewardsPoints = ((customer.getTransactionAmount() - Constants.SECOND_REWARD) * 2) + Constants.FIRST_REWARD;
+        }else if (customer.getTransactionAmount() == 0 || customer.getTransactionAmount() < Constants.FIRST_REWARD) {
+            return "0";
         }
         return String.valueOf(rewardsPoints);
     }
