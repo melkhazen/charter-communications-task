@@ -31,10 +31,9 @@ public class RewordsController {
     public ResponseEntity<String> getRewardsByCustomerId(@PathVariable("customerId") Long customerId){
         Customer customer = customerRepo.findByCustomerId(customerId);
         if (customer == null){
-//            throw new RuntimeException("Invalid / Missing customer Id ");
             return new ResponseEntity<>("Customer Not Found", HttpStatus.NOT_FOUND);
         }
         String customerRewards = rewardsService.getRewardsByCustomerId(customerId);
-        return new ResponseEntity<>("this customer has this many points: "+customerRewards, HttpStatus.OK);
+        return new ResponseEntity<>("Customer "+ customer.getCustomerName()+"has: "+customerRewards+" Points", HttpStatus.OK);
     }
 }

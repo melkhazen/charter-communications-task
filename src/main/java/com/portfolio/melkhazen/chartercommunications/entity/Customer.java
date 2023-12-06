@@ -19,5 +19,5 @@ public class Customer {
     @Column(name = "TRANSACTION_DATE")
     private String transactionDate;
     @Column(name = "AMOUNT")
-    private double transactionAmount;
+    private int transactionAmount;
 }

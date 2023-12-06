@@ -23,7 +23,6 @@ public class RewardsService{
 
     public void saveNewCustomer(Customer customer){
 
-        System.out.println(String.valueOf(currentDate) + " logging");
         newCustomer.setCustomerName(customer.getCustomerName());
         newCustomer.setTransactionDate(String.valueOf(currentDate));
         newCustomer.setTransactionAmount(customer.getTransactionAmount());
@@ -41,6 +40,6 @@ public class RewardsService{
         }else if (customer.getTransactionAmount() == 0 || customer.getTransactionAmount() < Constants.FIRST_REWARD) {
             return "0";
         }
-        return String.valueOf(rewardsPoints);
+        return String.valueOf((int) rewardsPoints);
     }
 }
